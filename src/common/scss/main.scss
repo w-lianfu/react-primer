@@ -1,0 +1,23 @@
+* {
+  font-family: 'Helvetica', 'Helvetica Neue', 'Arial', 'sans-serif', 'Ubuntu', 'PingFang SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei';
+  box-sizing: border-box;
+
+  &::after, &::before {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+::selection {
+  background-color: #333;
+  color: #fff;
+}

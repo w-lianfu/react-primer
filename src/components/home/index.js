@@ -1,8 +1,7 @@
 // @flow
-
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { Button } from 'antd-mobile';
+import { SearchBar } from 'antd-mobile';
 
 import './module/index.scss';
 import HomeStore from './module/store';
@@ -25,12 +24,17 @@ class Home extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <p>Home Page...</p>
+        <SearchBar placeholder="请输入快递单号" />
+        <p><span>Hello, Flow!</span></p>
         <p>Hello!</p>
         <p>{this.state.count}</p>
-        <h3>Hello, {homeStore.greeting}</h3>
+        <p>Hello, {homeStore.greeting}</p>
+        <ul>
+          <li>Vue</li>
+          <li>Angular</li>
+        </ul>
+        <p><label>Hello</label></p>
         <i className="material-icons">settings</i>
-        <Button type="primary">穿越去</Button>
       </div>
     )
   }

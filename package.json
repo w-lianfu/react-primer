@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "antd-mobile": "^2.2.1",
     "babel-plugin-import": "^1.8.0",
     "css-module-flow": "^1.0.0",
@@ -14,6 +15,7 @@
     "mobx-react": "^5.2.3",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
+    "px2rem-loader": "^0.1.9",
     "ramda": "^0.25.0",
     "react": "^16.4.1",
     "react-app-rewire-mobx": "^1.0.8",

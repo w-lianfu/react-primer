@@ -1,2 +1,5 @@
-$red: red;
-p { color: red; }
+@import '@/common/scss/color.scss';
+
+p {
+  color: $red;
+}

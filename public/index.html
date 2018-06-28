@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <meta name="renderer" content="webkit">
     <meta name="google" content="notranslate">
@@ -22,11 +22,21 @@
         document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
       }
     </script>
+    <script>
+      (function flexible(window, document) {
+        function setBodyFontSize () {
+          if (document.body)
+            document.body.style.fontSize = document.body.clientWidth * 4/100 + 'px';
+          else
+            document.addEventListener('DOMContentLoaded', setBodyFontSize);
+        }
+        setBodyFontSize();
+
+        window.addEventListener('resize', setBodyFontSize);
+      })(window, document);
+    </script>
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
     <div id="root"></div>
   </body>
 </html>
