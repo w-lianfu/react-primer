@@ -1,7 +1,8 @@
-# 掌上神州
+# React-Primer
 
-## 使用
-` npm start `
+## 启动
+* ` npm start `
+* ` flow `&nbsp;&nbsp;&nbsp;&nbsp;(静态语法检查)
 
 ## 架构
 * 基于 create-react-app
