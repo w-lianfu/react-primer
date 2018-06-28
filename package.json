@@ -5,6 +5,7 @@
   "dependencies": {
     "antd-mobile": "^2.2.1",
     "babel-plugin-import": "^1.8.0",
+    "css-module-flow": "^1.0.0",
     "echarts": "^4.1.0",
     "immutable": "^3.8.2",
     "lodash": "^4.17.10",
@@ -32,6 +33,7 @@
     "test": "react-app-rewired test --env=jsdom"
   },
   "devDependencies": {
+    "empty": "^0.10.1",
     "flow-bin": "^0.75.0"
   }
 }
